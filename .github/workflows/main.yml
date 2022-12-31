@@ -11,8 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'testing github actions'
-        run: pwd
+      - name: 'before'
+        run: ls
+      
+      -uses: actions/checkout@v3
 
-      - name: 'testing printing'
-        run: echo abdo
+      - name: 'after'
+        run: ls
